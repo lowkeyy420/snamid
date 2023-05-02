@@ -22,7 +22,7 @@ while ($result = $query->fetch()) {
     $count = $count + 1;
 }
 
-echo "<p>". $count . "</p>";
+echo "<p>USER COUNT". $count . "</p>";
 echo "</table>";
 
 ?>
