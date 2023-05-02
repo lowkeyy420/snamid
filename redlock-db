@@ -1,0 +1,15 @@
+FROM mysql:8
+
+ENV MYSQL_DATABASE=Redlock
+ENV MYSQL_ROOT_PASSWORD=password
+
+ENV MYSQL_HOST=127.0.0.1
+ENV MYSQL_PORT=3306
+
+ENV MYSQL_USER=user
+ENV MYSQL_PASSWORD=password
+
+
+COPY redlock-db.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 3306
